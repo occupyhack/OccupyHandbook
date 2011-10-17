@@ -1,0 +1,77 @@
+.alt_color { color: #f33; }
+
+.header {
+    padding-bottom: 15px;
+}
+
+#app_title {
+    position:relative;
+    font-weight: bold;
+    font-size: 29px;
+    max-width: 100%;
+    margin:0;
+    padding:0;
+    margin-top: 15px;
+}
+
+.app_name {
+    font-size: 25px !important;
+}
+
+ul li.question {
+  max-height: 125px;
+}
+td strong {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+td { text-align: center; }
+
+.question_listing {
+    font-size: 22px !important;
+}
+.question_comments {
+    font-size: 18px !important;
+}
+
+.ask {
+    min-height: 56px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+#ask_button {
+    font-size: 130% !important;
+}
+
+h4 {
+    font-size: 125% !important;
+}
+
+#ask_page {
+    text-align: center;
+}
+
+#back_button {
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+#question_title {
+    position:relative;
+    top: 8px;
+    font-weight:bold;
+    font-size: 30px;
+    right: -90px;
+}
+
+.question_author {
+    max-height: 30px;
+}
+
+.author_name {
+    top: 10px;
+    font-size: 14px;
+    margin-left: 90px;
+}

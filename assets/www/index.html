@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.css" />
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile.js"></script>
+  
+</head>
+<body>
+
+<div data-role="page" id="home">
+  
+ <div class="header" data-role="header">
+  <h1 id="app_title">The <span class="alt_color">Occupy</span> Handbook</h1>
+ </div>
+
+ <div data-role="content">
+   <ul data-role="listview" data-filter="true">
+     <li class="question">
+
+     <a href="#question" >
+     <table>
+       <tr><td>
+           <a href="#" class="up_arrow"><img src="imgs/up.png"
+     alt="upvote" /></a>
+       </td>
+         <td rowspan="3"><strong class="question_listing">Question 1</strong></td>
+       </tr><tr>
+         <td><span class="question_votes">124</span></td>
+       </tr><tr><td>
+           <a href="#" class="down_arrow"><img
+     src="imgs/down.png" alt="downvote" /></a>
+       </td></tr>
+     </table>
+
+     <span class="question_comments ui-li-count" data-theme="c">9 comments</span>
+     </a>
+     
+     </li>
+
+   </ul>
+ </div>
+
+ 
+ <div class="footer" data-role="footer" data-position="fixed">
+
+ <div class="ask" data-role="footer" data-theme="d" data-position="fixed">
+   <a href="#ask_page" id="ask_button" data-role="button" data-rel="dialog">Ask A Question!</a>
+  </div>
+  
+  <h4>www.How<span class="alt_color">2</span>Occupy.com</h4>
+ </div>
+</div>
+
+
+
+<div data-role="page" id="ask_page">
+ <h1>Ask Away...</h1>
+ <div data-role="fieldcontain">
+	<textarea cols="50" rows="20" name="textarea" id="textarea"></textarea>
+ </div>
+ 
+ <div class="ask" data-role="footer">
+ <a id="ask_button" href="#home" data-inline="true" data-role="button"
+ data-direction="reverse">Cancel</a>
+ <a id="ask_button" href="#home" data-inline="true" data-role="button"
+ data-theme="b">Submit</a>
+ </div>
+</div>
+
+
+<div data-role="page" id="question">
+  
+  <div class="header" data-role="header">
+    <a id="back_button" href="#home" data-role="button" data-direction="reverse">Back</a>
+    
+    <hi id="question_title">Question1</h1>
+  </div>
+  <div class="question_author" data-role="header" data-theme="c">
+    <span class="author_name">Asked by: Author</span>
+  </div>
+
+  <div data-role="content">
+   <ul data-role="listview" data-inset="true">
+     <li class="answer">
+     <table>
+       <tr><td>
+           <a href="#upvote" class="up_arrow"><img src="imgs/up.png"
+     alt="upvote" /></a>
+       </td>
+         <td rowspan="3"><strong>Answer..</strong></td>
+       </tr><tr>
+         <td><span class="answer_votes">26</span></td>
+       </tr><tr><td>
+           <a href="downvote" class="down_arrow"><img
+     src="imgs/down.png" alt="downvote" /></a>
+       </td></tr>
+     </table>
+     <p class="ui-li-aside"><strong>User</strong></p>
+     </li>
+     
+   </ul>
+  </div>
+  
+</div>
+
+</body>
+</html>
